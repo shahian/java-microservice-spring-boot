@@ -34,11 +34,12 @@ public class OrderController {
     }
     @GetMapping("/v1/orderByCustomerId")
     public ResponseEntity<?> getOrdersByCustomerId(@RequestParam Long id) {
-        List<Order> orders =  orderService.getOrdersByCustomerId(id);
-        if (orders.size() == 0) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-        return new ResponseEntity<>(orders, HttpStatus.OK);
+//        List<Order> orders =  orderService.getOrdersByCustomerId(id);
+//        if (orders.size() == 0) {
+//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//        }
+//        return new ResponseEntity<>(orders, HttpStatus.OK);
+        return new ResponseEntity<>("your Order was created",HttpStatus.OK);
 
     }
     @PostMapping("/v1/order")
