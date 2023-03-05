@@ -33,7 +33,7 @@ public class OrderController {
 
     }
     @GetMapping("/v1/orderByCustomerId")
-    public ResponseEntity<?> getOrdersByCustomerId(@RequestParam Long id) {
+    public ResponseEntity<?> getOrdersByCustomerId(@RequestParam Long customerId) {
 //        List<Order> orders =  orderService.getOrdersByCustomerId(id);
 //        if (orders.size() == 0) {
 //            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
