@@ -13,6 +13,7 @@
         <module>ms-customer</module>
         <module>ms-order</module>
         <module>ms-product</module>
+<module>ms-Gateway</module>
     </modules>
     <groupId>com.shahian</groupId>
     <artifactId>ms-sample</artifactId>
@@ -49,6 +50,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -59,7 +61,7 @@
                 <configuration>
                     <excludes>
                         <exclude>
-                            <groupId>org.projectlombok</groupId>
+                            <groupId>org.project-lombok</groupId>
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>

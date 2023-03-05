@@ -7,36 +7,27 @@
         <artifactId>ms-sample</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>ms-customer</artifactId>
+    <artifactId>ms-Gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ms-customer</name>
-    <description>ms-customer</description>
+    <name>ms-Gateway</name>
+    <description>ms-Gateway</description>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.1</spring-cloud.version>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -57,14 +48,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>
