@@ -48,6 +48,22 @@ public class MyService {
     // methods that use the repository
 }
 ```
+In this example, MyService declares a dependency on MyRepository in its constructor. When MyService is created, the IoC container injects an instance of MyRepository into the constructor. This allows MyService to use MyRepository without needing to create or locate it itself.
+
+You can also use annotations like @Autowired and @Qualifier to control the injection of dependencies. For example:
+```
+@Service
+public class MyService {
+    
+    @Autowired
+    @Qualifier("myJdbcRepository")
+    private MyRepository repository;
+    
+    // methods that use the repository
+}
+```
+In this example, @Autowired tells the container to inject an instance of MyRepository into the repository field. The @Qualifier annotation specifies which implementation of MyRepository to use if there are multiple implementations available.
+
 
 ### hibernate
 ***
