@@ -27,6 +27,7 @@ Overall, Spring Boot is a popular and powerful framework that simplifies the dev
 5. Modular architecture: Spring Boot is designed with a modular architecture, which means developers can choose and add only the modules they need, thus keeping the application lightweight.</br>
 6. Easy testing: Spring Boot provides a set of tools and utilities for testing, including the ability to create embedded web servers and mock objects, which makes it easy to write comprehensive tests.</br>
 <a>Overall, Spring Boot can help developers to build robust and scalable applications with minimal effort and focus on business logic.</a>
+####  IoC (Inversion of Control) and DI (Dependency Injection) In Spring Boot
 ### hibernate
 ***
 Hibernate is an open-source Object-Relational Mapping (ORM) tool for Java applications. It is a powerful and efficient framework that maps Java classes to database tables and vice versa, and provides a set of APIs to interact with the database.
