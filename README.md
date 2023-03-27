@@ -28,6 +28,27 @@ Overall, Spring Boot is a popular and powerful framework that simplifies the dev
 6. Easy testing: Spring Boot provides a set of tools and utilities for testing, including the ability to create embedded web servers and mock objects, which makes it easy to write comprehensive tests.</br>
 <a>Overall, Spring Boot can help developers to build robust and scalable applications with minimal effort and focus on business logic.</a>
 ####  IoC (Inversion of Control) and DI (Dependency Injection) In Spring Boot
+In Spring Boot, IoC (Inversion of Control) and DI (Dependency Injection) are core concepts that are used to manage the dependencies between the components of an application.
+
+IoC is a design pattern that promotes loose coupling between objects in an application. In traditional programming, objects are responsible for locating and creating their dependencies. With IoC, the responsibility for managing object creation and injection is shifted to an external framework. In Spring Boot, the IoC container manages the objects and their dependencies, making it easy to replace or modify components as needed.
+
+DI is a specific implementation of IoC that provides a way to inject dependencies into objects rather than having the objects create or locate their dependencies themselves. With DI, objects declare their dependencies as constructor parameters or setters, and the container provides the appropriate dependencies when the object is created.
+
+Here's an example of how DI works in Spring Boot:
+```
+@Service
+public class MyService {
+    
+    private final MyRepository repository;
+    
+    public MyService(MyRepository repository) {
+        this.repository = repository;
+    }
+    
+    // methods that use the repository
+}
+```
+
 ### hibernate
 ***
 Hibernate is an open-source Object-Relational Mapping (ORM) tool for Java applications. It is a powerful and efficient framework that maps Java classes to database tables and vice versa, and provides a set of APIs to interact with the database.
